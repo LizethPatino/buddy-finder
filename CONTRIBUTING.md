@@ -44,7 +44,7 @@ We squash when merging, so messy commits inside your branch are fine. **What lan
 
 ## Pull requests
 
-- Keep them small: one thing per PR, one every day or two.
+- Keep them small: one thing per PR. Open one as soon as a small piece works. Several a day is great.
 - Fill in the template and write `Closes #12` to link the issue.
 - Every PR needs one approval and all comments resolved. Nobody can push to `main` directly, including the team lead.
 - **Reviewing?** Be kind and specific, ask questions, then **Approve** or **Request changes**. Reviews are for learning, not judging.
