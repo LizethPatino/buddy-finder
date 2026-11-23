@@ -1,6 +1,6 @@
 # Buddy Finder
 
-![Status: in progress](https://img.shields.io/badge/status-in%20progress-67C6C0)
+![Status: in progress](docs/images/status-in-progress.svg)
 
 **Find your people before the event starts.**
 
