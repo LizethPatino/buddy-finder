@@ -1,6 +1,6 @@
 # Buddy Finder
 
-![Status: in progress](docs/images/status-in-progress.svg)
+![Status: in progress](https://github.com/LizethPatino/buddy-finder/blob/docs/remove-badge/docs/images/status-in-progress.svg)
 
 **Find your people before the event starts.**
 
@@ -22,7 +22,7 @@ Group mini project for **ECS781P Cloud Computing**, Queen Mary University of Lon
 
 ## Planned architecture
 
-![Planned architecture: a load balancer sends website traffic to a React app and /api traffic to autoscaled Flask pods on Google Kubernetes Engine, which use PostgreSQL on Neon and external APIs for weather, maps and email](docs/images/architecture.png)
+![Planned architecture: a load balancer sends website traffic to a React app and /api traffic to autoscaled Flask pods on Google Kubernetes Engine, which use PostgreSQL on Neon and external APIs for weather, maps and email](https://github.com/LizethPatino/buddy-finder/blob/docs/remove-badge/docs/images/architecture.png)
 
 The API is stateless (JWT login), so Kubernetes can add pods under load. Details in [`docs/architecture.md`](docs/architecture.md).
 
