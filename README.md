@@ -56,7 +56,7 @@ docker compose up --build
 
 Website at http://localhost:5173, API docs at http://localhost:5000/api/docs. Tests: `cd backend && pytest`.
 
-Planned endpoints and error format: [`docs/api.md`](docs/api.md).
+Planned endpoints and error format: [`docs/api.md`](docs/api.md). Database setup and roles: [`docs/database.md`](docs/database.md).
 
 ## Team
 
@@ -64,6 +64,7 @@ Built together by the Buddy Finder team.
 
 | Name | Area |
 | --- | --- |
+| Atul Mathur | Database |
 
 Each of us adds our own row in our first pull request. How we work: [CONTRIBUTING.md](CONTRIBUTING.md).
 
