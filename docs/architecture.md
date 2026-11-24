@@ -41,6 +41,8 @@ schemas/   → what each request and response must contain; also builds the Swag
 | `buddy_groups` | id, event_id, created_at — at most 4 members |
 | `optins` | id, user_id, event_id, interests (text[]), group_id, membership (pending, accepted or declined), created_at — one per user per event |
 
+Setup, roles and the rules the database enforces: [`database.md`](database.md).
+
 ## Matching rule
 
 When a student opts in, they join the open group for that event (fewer than 4 members) that shares the most interests with them, as long as they share at least one. If there is none, a new group starts. The group is announced by email once it reaches 3 members.
