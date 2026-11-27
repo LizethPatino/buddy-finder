@@ -57,19 +57,23 @@
 }
 
 /* Event list */
+/* Responsive event grid */
 .event-list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fill, minmax(min(100%, 400px), 1fr));
   gap: 16px;
+  align-items: stretch;
 }
 
 /* Event card */
 .event-card {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: stretch;
   gap: 16px;
+
+  min-width: 0;
 
   background-color: var(--color-surface);
   border: 1px solid var(--color-border);
@@ -82,7 +86,7 @@
   flex-direction: column;
   gap: 4px;
 
-  flex: 1 1 220px;
+  flex: 1;
   min-width: 0;
   overflow-wrap: anywhere;
 }
@@ -100,8 +104,8 @@
 .event-actions {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   flex-shrink: 0;
-  max-width: 100%;
 }
 
 /* Buttons */
