@@ -1,0 +1,78 @@
+/**
+ * Navigation bar and application branding styles.
+ */
+
+.app-header {
+  background-color: #171717;
+  color: white;
+  padding: 16px 24px;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+/* Application branding */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand h1 {
+  font-size: 24px;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.logo-circle {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.logo-circle + .logo-circle {
+  margin-left: -10px;
+}
+
+.teal {
+  background-color: #6cbdb9;
+}
+
+.purple {
+  background-color: #a58bc1;
+}
+
+.pink {
+  background-color: #ce5188;
+}
+
+/* Navigation links */
+.navigation {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.navigation button {
+  background: transparent;
+  color: white;
+  border: none;
+  padding: 8px 0;
+}
+
+.navigation button:hover {
+  color: #b5ddda;
+}

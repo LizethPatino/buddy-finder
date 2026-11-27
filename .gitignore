@@ -222,3 +222,7 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 .DS_Store
+
+# Additional environment configuration files
+.env.*
+!.env.example

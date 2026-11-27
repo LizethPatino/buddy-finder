@@ -1,0 +1,48 @@
+/**
+ * Global styles and design tokens for Buddy Finder.
+ */
+
+:root {
+  --color-background: #f7f7f2;
+  --color-surface: #ffffff;
+  --color-text: #171717;
+  --color-text-secondary: #666666;
+  --color-primary: #287c78;
+  --color-primary-light: #b5ddda;
+  --color-border: #deded8;
+
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+#root {
+  min-height: 100vh;
+}

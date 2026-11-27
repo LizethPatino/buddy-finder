@@ -63,7 +63,7 @@ Planned endpoints and error format: [`docs/api.md`](docs/api.md).
 Built together by the Buddy Finder team.
 
 | Name | Area |
-| --- | --- |
+| Apoorv | Frontend development, responsive UI and API integration |
 
 Each of us adds our own row in our first pull request. How we work: [CONTRIBUTING.md](CONTRIBUTING.md).
 
