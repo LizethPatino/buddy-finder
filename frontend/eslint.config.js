@@ -1,3 +1,9 @@
+/**
+ * ESLint configuration for the Buddy Finder frontend.
+ * Defines code quality rules for JavaScript, TypeScript
+ * and React, including React Hooks validation.
+ */
+
 import js from '@eslint/js'
 import globals from 'globals'
 import reactHooks from 'eslint-plugin-react-hooks'

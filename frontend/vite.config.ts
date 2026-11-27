@@ -1,7 +1,12 @@
+/**
+ * Vite configuration for the Buddy Finder frontend.
+ * Configures React support for local development
+ * and production builds.
+ */
+
 import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
 })
