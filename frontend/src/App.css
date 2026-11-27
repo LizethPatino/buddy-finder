@@ -8,6 +8,9 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 16px;
+
+  padding-bottom:
+    calc(88px + env(safe-area-inset-bottom, 0px));
 }
 
 /* Welcome section */
