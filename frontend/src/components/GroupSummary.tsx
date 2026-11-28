@@ -4,10 +4,12 @@
  */
 
 import './GroupSummary.css'
+import { Link } from 'react-router';
 
 interface GroupSummaryProps {
-  eventTitle: string
-  members: string[]
+  eventTitle: string;
+  members: string[];
+  showViewLink?: boolean;
 }
 
 /**
@@ -16,6 +18,7 @@ interface GroupSummaryProps {
 function GroupSummary({
   eventTitle,
   members,
+  showViewLink = true,
 }: GroupSummaryProps) {
   return (
     <aside
@@ -58,13 +61,23 @@ function GroupSummary({
               {eventTitle}
             </p>
 
-            <button
+            {/* <button
               className="group-view-button"
               type="button"
               disabled
             >
               See my group
-            </button>
+            </button> */}
+            
+            {showViewLink && (
+                <Link
+                    to="/groups"
+                    className="group-view-button"
+                >
+                    See my group
+                </Link>
+            )}
+
           </>
         ) : (
           <p className="group-empty-message">

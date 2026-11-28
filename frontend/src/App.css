@@ -224,3 +224,37 @@ input:focus-visible {
     padding: 24px;
   }
 }
+
+/* Shared styles for secondary pages */
+.page-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 24px;
+
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.event-link {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.event-link:focus-visible,
+.back-link:focus-visible,
+.group-view-button:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}

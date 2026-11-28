@@ -2,7 +2,10 @@
  * Reusable component for displaying a Buddy Finder event.
  */
 
+import { Link } from 'react-router';
+
 interface EventCardProps {
+  eventId: number;
   title: string;
   date: string;
   location: string;
@@ -11,7 +14,12 @@ interface EventCardProps {
 /**
  * Displays an event and its primary action.
  */
-function EventCard({ title, date, location }: EventCardProps) {
+function EventCard({
+  eventId,
+  title,
+  date,
+  location,
+}: EventCardProps) {
   return (
     <article className="event-card">
 
@@ -22,12 +30,12 @@ function EventCard({ title, date, location }: EventCardProps) {
       </div>
 
       <div className="event-actions">
-        <button
-          type="button"
-          className="primary-button"
+        <Link
+          to={`/events/${eventId}`}
+          className="primary-button event-link"
         >
           Find my group
-        </button>
+        </Link>
       </div>
 
     </article>

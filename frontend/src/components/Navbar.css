@@ -118,6 +118,7 @@
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 /* Currently selected navigation item */
@@ -127,6 +128,10 @@
 
 .responsive-nav .nav-item:hover {
   color: #80d1ca;
+}
+
+.responsive-nav .nav-item {
+  text-decoration: none;
 }
 
 .responsive-nav .nav-item:focus-visible {

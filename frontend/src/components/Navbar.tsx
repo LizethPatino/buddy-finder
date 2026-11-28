@@ -1,17 +1,21 @@
+
 /**
  * Navigation bar for the Buddy Finder application.
  */
 
+import { NavLink } from 'react-router';
 import './Navbar.css';
 
 /**
- * Displays the application brand and navigation menu.
+ * Displays the application brand and responsive navigation menu.
+ * Highlights the navigation item corresponding to the active route.
  */
 function Navbar() {
   return (
     <header className="app-header">
       <div className="header-content">
 
+        {/* Application branding */}
         <div className="brand">
           <div className="brand-logo" aria-hidden="true">
             <span className="logo-circle teal"></span>
@@ -22,14 +26,16 @@ function Navbar() {
           <h1>Buddy Finder</h1>
         </div>
 
-        {/* <nav className="navigation" aria-label="Main navigation">
-          <button type="button">Events</button>
-          <button type="button">My Groups</button>
-          <button type="button">Profile</button>
-        </nav> */}
-
+        {/* Responsive navigation */}
         <nav className="responsive-nav" aria-label="Main navigation">
-          <button className="nav-item nav-item-active" type="button">
+
+          {/* Events */}
+          <NavLink
+            to="/events"
+            className={({ isActive }) =>
+              isActive ? 'nav-item nav-item-active' : 'nav-item'
+            }
+          >
             <svg
               width="22"
               height="22"
@@ -43,9 +49,15 @@ function Navbar() {
               <path d="M16 3v4M8 3v4M3 10h18" />
             </svg>
             <span>Events</span>
-          </button>
+          </NavLink>
 
-          <button className="nav-item" type="button">
+          {/* My Groups */}
+          <NavLink
+            to="/groups"
+            className={({ isActive }) =>
+              isActive ? 'nav-item nav-item-active' : 'nav-item'
+            }
+          >
             <svg
               width="22"
               height="22"
@@ -60,9 +72,15 @@ function Navbar() {
               <path d="M16 5a3 3 0 0 1 0 6M17 14a5 5 0 0 1 4 5v1" />
             </svg>
             <span>My Groups</span>
-          </button>
+          </NavLink>
 
-          <button className="nav-item" type="button">
+          {/* Profile */}
+          <NavLink
+            to="/profile"
+            className={({ isActive }) =>
+              isActive ? 'nav-item nav-item-active' : 'nav-item'
+            }
+          >
             <svg
               width="22"
               height="22"
@@ -76,7 +94,8 @@ function Navbar() {
               <path d="M4 21v-2a8 8 0 0 1 16 0v2" />
             </svg>
             <span>Profile</span>
-          </button>
+          </NavLink>
+
         </nav>
 
       </div>
