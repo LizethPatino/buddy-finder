@@ -30,6 +30,21 @@
   color: var(--color-text-secondary);
 }
 
+/* Main student dashboard layout */
+.dashboard-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 24px;
+}
+
+.events-section {
+  min-width: 0;
+}
+
+.dashboard-sidebar {
+  display: none;
+}
+
 /* Events section */
 .events-section > h2 {
   margin-bottom: 16px;
@@ -170,6 +185,21 @@ input:focus-visible {
   .event-actions .primary-button {
     width: auto;
   }
+
+  .dashboard-layout {
+  grid-template-columns: minmax(0, 1fr) 280px;
+  align-items: start;
+}
+
+  .dashboard-sidebar {
+    display: block;
+  }
+
+  .event-list {
+    grid-template-columns:
+      repeat(auto-fill, minmax(min(100%, 280px), 1fr));
+  }
+
 }
 
 /* Desktop layout */

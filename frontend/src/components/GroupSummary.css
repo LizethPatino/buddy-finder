@@ -1,0 +1,101 @@
+/**
+ * Styling for the desktop buddy group summary.
+ */
+
+.group-summary {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-bottom: 3px solid var(--color-primary);
+  border-radius: 12px;
+
+  min-width: 0;
+  padding: 20px;
+}
+
+.group-summary-heading {
+  display: inline-block;
+  background-color: var(--color-primary-light);
+  padding: 8px 12px;
+  font-size: 20px;
+  border-radius: 4px;
+}
+
+.group-summary-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.group-status {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.group-avatars {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+}
+
+.group-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid white;
+
+  font-size: 18px;
+  font-weight: 600;
+  color: #171717;
+}
+
+.group-avatar + .group-avatar {
+  margin-left: -10px;
+}
+
+.avatar-0 {
+  background-color: #6cbdb9;
+}
+
+.avatar-1 {
+  background-color: #a58bc1;
+}
+
+.avatar-2 {
+  background-color: #ce5188;
+}
+
+.group-member-names {
+  font-size: 16px;
+  overflow-wrap: anywhere;
+}
+
+.group-event-title,
+.group-empty-message {
+  color: var(--color-text-secondary);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.group-view-button {
+  width: 100%;
+  padding: 12px;
+
+  background-color: transparent;
+  color: var(--color-text);
+  border: 1px solid var(--color-text);
+  border-radius: 8px;
+
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.group-view-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
